@@ -1,4 +1,4 @@
-# Docker image for testing a Gluster setup
+# Docker images for testing a Gluster setup
 
 ## Usage
 
