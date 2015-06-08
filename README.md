@@ -38,3 +38,7 @@ To replace `$OLD_HOST` in a volume with `$NEW_HOST`, run (on one of the servers)
     gluster volume replace-brick $VOLUME_NAME $OLD_HOST:$VOLUME_PATH $NEW_HOST:$VOLUME_PATH commit force
     gluster peer detach $OLD_HOST
     gluster volume rebalance $VOLUME_NAME start
+
+## References
+
+See [this post](https://www.gluster.org/pipermail/gluster-users/2012-October/011502.html) for how to replace bricks in volumes.
