@@ -1,0 +1,13 @@
+server:
+  build: server
+  privileged: true
+  volumes:
+    - server/start.sh:/start.sh
+    - log/server:/var/log/glusterfs
+
+client:
+  build: client
+  privileged: true
+  hostname: client
+  volumes:
+    - client/start.sh:/start.sh
